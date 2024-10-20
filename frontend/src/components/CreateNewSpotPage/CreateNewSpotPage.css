@@ -1,0 +1,114 @@
+.create-spot-form-div {
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.create-spot-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.city-state,
+.lat-long {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.city-class {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+}
+
+.state-class {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.lat-class,
+.lng-class {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Align input and comma */
+.input-with-comma {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.comma {
+  font-size: 1rem;
+  line-height: 3rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  height: 2.0rem;
+  line-height: 1.5;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+/* Align the dollar sign and input */
+.dollar-sign-price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.dollar-sign-span {
+  font-size: 1.4rem;
+  height: 2.5rem;
+  display: flex;
+}
+
+.dollar-sign-price input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.error-create-new-spot-page {
+  color: red;
+  font-weight: normal;
+}
+
+textarea {
+  line-height: 1.2rem;
+}

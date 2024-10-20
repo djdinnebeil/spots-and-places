@@ -1,0 +1,178 @@
+.images-section {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 1000px; /* Max limit width 1000px */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: auto;
+  min-height: 400px;
+  max-height: 400px;
+}
+
+.large-image {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.large-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.small-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.small-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.spot-details-container {
+  width: 90vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.booking-section {
+  display: flex;
+}
+
+.booking-description-section {
+  width: 80vw;
+}
+
+.booking-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: auto;
+  width: 600px;
+  border: 1px solid;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.price-and-review {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.price-box, .review-box {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.review-box {
+  white-space: nowrap;
+}
+
+.reserve-button {
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 90%;
+  margin: auto;
+}
+
+.reserve-button:hover {
+  background-color: #1c86ee;
+}
+
+.reviews-section {
+  margin-top: 5px;
+}
+
+.reviews-section-header {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.review-list {
+  list-style-type: none;
+}
+
+.review-item {
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-left: 5px;
+}
+
+.spot-details-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.post-review-button-spots-page {
+  list-style-type: none;
+}
+
+.delete-review-for-spot {
+  display: flex;
+  background-color: darkorange;
+  max-height: 25px;
+  font-size: 0.8rem;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.post-review-spot {
+  display: flex;
+  background-color: darkgreen;
+  max-height: 25px;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.user-name-spot-page {
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+}
+
+.user-review-month {
+  font-size: 0.9rem;
+  color: slategray;
+  font-family: Helvetica, sans-serif;
+}
+
+.user-review-item {
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-left: 5px;
+  /*background-color: lightyellow;*/
+}

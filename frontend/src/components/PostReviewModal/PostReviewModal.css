@@ -1,0 +1,42 @@
+.modal-box {
+  padding: 30px 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.star-rating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.stars-label {
+  align-self: end;
+  font-size: 1.2rem;
+}
+
+.star {
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.star.selected {
+  color: gold;
+}
+
+.star:hover {
+  color: darkorange;
+}
+
+.post-review-button {
+  list-style-type: none;
+}
+
+.post-review-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

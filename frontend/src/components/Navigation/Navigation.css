@@ -1,0 +1,63 @@
+.hidden {
+  display: none;
+}
+
+ul {
+  width: 200px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.site-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  color: darkblue;
+}
+
+.nav-right {
+  display: flex;
+}
+
+.nav-right .create-new-spot {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 1.2em;
+  color: #075B69;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 24px;
+}
+
+.create-new-spot:hover {
+  background-color: whitesmoke;
+  color: darkblue;
+}

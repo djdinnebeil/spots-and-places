@@ -1,0 +1,188 @@
+.spotsContainer {
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.spotsContainer .spotsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Styling individual spot tiles */
+.spotTile {
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.spotTile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Aligning the spot information */
+.spotInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.rating {
+  margin-left: auto; /* Push rating to the right */
+  font-weight: bold;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 8px;
+  margin-right: auto;
+}
+
+/* Maximum 4 columns, minimum 1 column */
+@media (min-width: 1280px) {
+  .spotsContainer .spotsList  {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1280px) {
+  .spotsContainer .spotsList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 950px) {
+  .spotsContainer .spotsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .spotsContainer .spotsList {
+    grid-template-columns: 1fr;
+  }
+}
+
+.update-and-delete-row {
+  display: flex;
+  margin-right: auto;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.spotsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.manage-spots-update-button {
+  background-color: darkgreen;
+}
+
+.manage-spots-delete-button {
+  background-color: darkred;
+}
+
+:root {
+  --primary-color: darkgreen;
+  --hover-color: darkblue;
+  --text-color: linen;
+  --border-color: black;
+  --header-bg: linen;
+}
+
+.manage-spots-create-new-spot {
+  display: inline-block;
+  color: var(--text-color);
+  background-color: #0000BF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.manage-spots-create-new-spot-link {
+  text-decoration: none;
+  color: white;
+}
+.manage-spots-create-new-spot:hover {
+  background-color: #0000BF;
+  transform: scale(1.05);
+}
+
+.manage-spots-header {
+  background-color: var(--header-bg);
+  padding: 12px 5px;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 2px solid var(--border-color);
+}
+
+/* Styling for update button */
+.manage-spots-update-button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.manage-spots-update-button:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+}
+
+/* Styling for delete button */
+.manage-spots-delete-button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.manage-spots-delete-button:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}
+
+.update-and-delete-row {
+  display: flex;
+  width: 100%;
+  padding: 5px 0;
+  gap: 10px;
+}
