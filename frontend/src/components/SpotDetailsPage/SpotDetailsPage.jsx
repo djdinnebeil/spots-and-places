@@ -70,7 +70,7 @@ const SpotDetailsPage = () => {
           <div className='price-and-review'>
             <div className="price-box" data-testid={'spot-price'}>${spot.price} night</div>
             <p className="review-box">
-              <span data-testid={'spot-rating'} className="review-spot-rating">&#9733;{spot.avgStarRating ? parseFloat(spot.avgStarRating).toFixed(1) : 'New'}</span><span hidden={spot.avgStarRating === null}>&nbsp;·&nbsp;</span>
+              <span data-testid={'spot-rating'} className="review-spot-rating">&#9733;{!isNaN(parseFloat(spot.avgStarRating)) ? parseFloat(spot.avgStarRating).toFixed(1) : 'New'}</span><span hidden={spot.avgStarRating === null}>&nbsp;·&nbsp;</span>
               <span data-testid={'review-count'} className="review-spot-total-reviews">{spot.numReviews === 1 && '1 Review' || spot.numReviews > 0 && `${spot.numReviews} Reviews`}</span>
             </p>
           </div>
@@ -80,7 +80,7 @@ const SpotDetailsPage = () => {
       <hr/>
       <div className="reviews-section">
         <h2 data-testid={'reviews-heading'}
-            className="reviews-section-header"><span data-testid={'spot-rating'}>&#9733;{spot.avgStarRating ? parseFloat(spot.avgStarRating).toFixed(1) : 'New'}</span><span hidden={spot.avgStarRating === null}>&nbsp;·&nbsp;</span>
+            className="reviews-section-header"><span data-testid={'spot-rating'}>&#9733;{!isNaN(parseFloat(spot.avgStarRating)) ? parseFloat(spot.avgStarRating).toFixed(1) : 'New'}</span><span hidden={spot.avgStarRating === null}>&nbsp;·&nbsp;</span>
           <span data-testid={'review-count'}>{spot.numReviews === 1 && '1 Review' || spot.numReviews > 0 && `${spot.numReviews} Reviews`}</span></h2>
 
         <li className='post-review-button-spots-page' hidden={!sessionUser || sessionUser.id === spot.ownerId || hasReviewed}>

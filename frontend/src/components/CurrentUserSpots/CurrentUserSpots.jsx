@@ -66,7 +66,9 @@ const CurrentUserSpots = () => {
                   alt={spot.name}/>
                 <div className="spotInfo" data-testid={'spot-city'}>
                   <span >{spot.city}, {spot.state}</span>
-                  <span className="rating" data-testid={'spot-rating'}>&#9733; {spot.avgRating?.toFixed(1) || 'New'}</span>
+                  <span className="rating" data-testid={'spot-rating'}>&#9733; {!isNaN(parseFloat(spot.avgRating))
+                    ? parseFloat(spot.avgRating).toFixed(1)
+                    : 'New'}</span>
                 </div>
                 <span className="price" data-testid={'spot-price'}>${spot.price} night</span>
                 </Link>
