@@ -41,7 +41,9 @@ const SpotsList = () => {
                   </div>
                   <div className="rating-plus-star">&#9733;
                   <span className="rating" data-testid={'spot-rating'}>
-                    {spot.avgRating?.toFixed(1) || 'New'}
+                    {!isNaN(parseFloat(spot.avgRating))
+                      ? parseFloat(spot.avgRating).toFixed(1)
+                      : 'New'}
                   </span>
                   </div>
                 </div>
